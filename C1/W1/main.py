@@ -24,3 +24,6 @@ model.fit(xs, ys, epochs=500)
 # when the model has finished training
 # it will give back values using the predict method
 print(model.predict([10.0]))
+
+# check tensorflow version
+print(tf.__version__) 
