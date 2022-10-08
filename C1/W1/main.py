@@ -14,8 +14,10 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 # then the logic itself, each guess should be better than the one before
 
 # Set the data
-xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)
-ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
+x_value = [x for x in np.arange(-100.0, 1000000.0, 1.0)]
+y_value = [y for y in np.arange(-100.0, 2000100.0, 2.0)]
+xs = np.array(x_value, dtype=float)
+ys = np.array(y_value, dtype=float)
 
 # the training will takes place in the fit command
 model.fit(xs, ys, epochs=500)
