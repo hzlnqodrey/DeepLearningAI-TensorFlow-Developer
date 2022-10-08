@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Define Hello World in Neural Network | Layer density has only 1
-model = keras.Sequential([keras.layer.Dense(units=1, input_shape=[1])])
+model = keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])
 
 # optimizer and loss will improve the mathematical function guess on machine
 # math is important, preferably learning it too, 
