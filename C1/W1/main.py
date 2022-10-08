@@ -16,3 +16,7 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 # Set the data
 xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)
 ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
+
+# the training will takes place in the fit command
+model.fit(xs, ys, epochs=500)
+# epochs equals 500 value means that it will go through the training loop 500 times
