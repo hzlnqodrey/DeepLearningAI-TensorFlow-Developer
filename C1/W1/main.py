@@ -20,3 +20,7 @@ ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 # the training will takes place in the fit command
 model.fit(xs, ys, epochs=500)
 # epochs equals 500 value means that it will go through the training loop 500 times
+
+# when the model has finished training
+# it will give back values using the predict method
+print(model.predict([10.0]))
