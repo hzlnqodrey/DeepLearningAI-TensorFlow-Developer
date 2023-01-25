@@ -1,0 +1,9 @@
+        tf.keras.layers.Embedding(vocab_size+1, embedding_dim, input_length=maxlen, weights=[embeddings_matrix], trainable=False), 
+        tf.keras.layers.Conv1D(256, 2, activation='relu'),
+        tf.keras.layers.GlobalMaxPooling1D(),
+        tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(128, activation='relu'),
+        tf.keras.layers.Dense(1, activation='sigmoid'),
+
+
